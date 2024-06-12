@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-width: 50px;
+            height: auto;
+        }
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .section-content {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="logo" src="{{ url_for('static', filename='images/Logo.png') }}" alt="PDF Toolkit"> PDF Toolkit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/merge">Merge PDFs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/convert_to_jpg">Convert to JPG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/convert_to_docx">Convert to DOCX</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to PDF Tools</h1>
+        <p>Merge, Convert, and Manage your PDFs with Ease</p>
+        <a href="/merge" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Merge PDFs</h2>
+                <p>Easily merge multiple PDF files into one.</p>
+                <a href="/merge" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Convert to JPG</h2>
+                <p>Convert PDF pages to high-quality JPG images.</p>
+                <a href="/convert_to_jpg" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Convert to DOCX</h2>
+                <p>Convert PDF documents to editable DOCX files.</p>
+                <a href="/convert_to_docx" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- How Does This Work? Section -->
+    <div class="container">
+        <h2 class="section-title">How Does This Work?</h2>
+        <p class="section-content">Our website offers a simple and efficient way to merge, convert, and manage your PDF files. Just upload your files, select the desired action, and download the processed files within seconds.</p>
+
+        <h2 class="section-title">Security & Privacy</h2>
+        <p class="section-content">We take your privacy seriously. All uploaded files are encrypted and automatically deleted from our servers after processing, ensuring your data remains secure and confidential.</p>
+
+        <h2 class="section-title">Quick & Easy Conversion</h2>
+        <p class="section-content">Our tools are designed to provide quick and easy conversion of your PDF files without compromising on quality. Whether you need to merge multiple PDFs or convert them to other formats, our service guarantees fast and reliable results.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">

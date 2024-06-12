@@ -1,0 +1,15 @@
+{
+  "name": "pdftoolkit",
+  "version": "1.0.0",
+  "description": "PDFToolkit is a web application that provides various PDF tools, including PDF merging, PDF to JPG conversion, and PDF to Word conversion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
