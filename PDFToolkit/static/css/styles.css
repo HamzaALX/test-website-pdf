@@ -1,31 +1,40 @@
 body {
-    font-family: Arial, sans-serif;
-}
-
-.hero {
-    background-image: url('path/to/your/background-image.jpg');
+    background-image: url('/static/background-image.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
-    color: white;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #555;
-    font-size: 1.1rem;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #000;
-}
+    background-repeat: no-repeat;
+  }
+  
+  /* Change the placement and size of buttons */
+  .btn-primary {
+    position: relative;
+    left: 50px; /* Adjust the left value as needed */
+    top: 20px; /* Adjust the top value as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+  .btn-secondary {
+    position: relative;
+    left: 100px; /* Adjust the left value as needed */
+    top: 50px; /* Adjust the top value as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  /* Add animation for pop-up effect */
+  @keyframes pop-up {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    animation: pop-up 0.3s ease;
+  }
+   
